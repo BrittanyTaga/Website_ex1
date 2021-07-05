@@ -1,0 +1,87 @@
+/*Elements of this Class name being modified*/
+.navbar:hover:not(#my-pic){
+    background-color: cornflowerblue;
+}
+
+.dropdown-content{
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: auto;
+}
+
+.navbar:hover .dropdown-content{
+    display: block;
+    position:absolute;
+    overflow: auto;
+}
+
+.navul .navbar{
+    display:inline-block;
+    color:white;
+    height: 100%;
+    overflow: auto;
+}
+
+.navul{
+    background-color: #333;
+    padding:0;
+}
+
+.dropdown-content a{
+    display:block;
+    position:relative;
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: left;
+    overflow: auto;
+}
+
+.dropdown-content a:hover{
+    background-color:darkblue;
+    color:white;
+}
+
+/*All elements being modified*/
+/*li {}*/
+/*Adding in animation*/
+@keyframes ani{
+    from {border:grey;}
+    to {border:white;}
+}
+/*Specific Element with specific ID*/
+#logo{
+    height:40px;
+    width:50px;
+    border:grey solid 3px;
+    display: inline;
+    animation-name: ani;
+    animation-duration:3s;
+}
+
+#my-pic{
+    display: inline;    
+}
+
+#home-btn a{
+    color: white;
+    text-decoration: none;
+}
+/*End for Nav Bar*/
+
+p{
+    font-size: 18px;
+}
+
+h2{
+    font-family:'Bona Nova', serif;
+}
+
+footer{
+    background-color: darkblue;
+    color:white
+}
